@@ -7,8 +7,8 @@
 ADMIN_TOKEN=
 
 # Module 1.1 — อย่างน้อยต้องมี 1 ใน 3 ตัวนี้ ถึงจะคุยได้ (ไม่มีก็ยังเปิดหน้าเว็บได้ แต่คุยไม่ได้)
-GEMINI_API_KEY=
-OPENAI_API_KEY=
+GEMINI_API_KEY=ubu_1b818d50959e303823c00f2e9ceac780
+OPENAI_API_KEY=ubu_1b818d50959e303823c00f2e9ceac780
 # key ของ AI gateway แบบ OpenAI-compatible กำหนดเอง (provider "openai-compat") — base URL ตั้งใน [vars] ของ
 # wrangler.toml (OPENAI_COMPAT_BASE_URL) หรือหน้า "ตั้งค่า Key" แทน เพราะไม่ใช่ความลับ
 OPENAI_COMPAT_API_KEY=
