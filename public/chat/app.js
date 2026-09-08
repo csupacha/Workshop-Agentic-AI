@@ -6,6 +6,7 @@
   const input = document.querySelector('#input');
   const send = document.querySelector('#send');
   const newChat = document.querySelector('#new-chat');
+  const clearChatButton = document.querySelector('#clear-chat');
   const provider = document.querySelector('#provider');
   const model = document.querySelector('#model');
   const customModelWrap = document.querySelector('#custom-model-wrap');
@@ -42,6 +43,7 @@
   provider.addEventListener('change', updateModels);
   model.addEventListener('change', () => { customModelWrap.hidden = model.value !== 'กำหนดเอง...'; });
   newChat.addEventListener('click', clearChat);
+  clearChatButton.addEventListener('click', clearChat);
   input.addEventListener('input', () => { input.style.height = 'auto'; input.style.height = `${Math.min(input.scrollHeight, 140)}px`; });
   input.addEventListener('keydown', (event) => { if (event.key === 'Enter' && !event.shiftKey) { event.preventDefault(); form.requestSubmit(); } });
   updateModels();
